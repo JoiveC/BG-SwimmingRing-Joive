@@ -1,6 +1,7 @@
-bin/
+﻿bin/
 obj/
 .vs/
+build/
 *.user
 *.suo
 *.csproj.user

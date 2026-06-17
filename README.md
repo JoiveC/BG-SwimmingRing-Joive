@@ -1,49 +1,35 @@
-# BG Swimming Ring
+﻿# BG Swimming Ring
 
-This mod adds a cool new craftable, wearable item to Burglin' Gnomes:
+Small BepInEx mod for Burglin' Gnomes.
 
-* **Inflatable Swimming Ring**
+Adds a craftable inflatable swimming ring item. When equipped, it gives extra control in water and shows a swimming ring visual on the player.
 
-It costs some plastic to make, goes right into your equipment slot, and helps you stay steady while you're in the water. No need to worry about extra files either—the 3D model and inventory icon are packed right inside the DLL.
+## Features
 
-The ring's name and description support every language in the game. If your language doesn't have a custom translation yet, it'll just default to English.
+- Craftable swimming ring item
+- Wearable equipment item
+- Water movement support while equipped
+- Embedded model and inventory icon
+- Basic config options
 
----
+## Installation
 
-## How to Install
+Put BG-SwimmingRing-Joive.dll into:
 
-Just drop the DLL file into your BepInEx plugins folder:
+`	ext
+Burglin' Gnomes/BepInEx/plugins
+Config
 
-1. Grab `BG-SwimmingRing-Joive.dll`.
-2. Put it here: `Burglin' Gnomes/BepInEx/plugins`
+After first launch, the config file is created in the BepInEx config folder.
 
----
+Main options:
 
-## Config
+EnableMod
+PlasticCost
+SwimSpeedMultiplier
+BuoyancyForce
+VisualScale
+DebugLogs
+Notes
 
-Launch the game once, and a config file will pop up in your BepInEx config folder. You can tweak all of these settings to your liking:
-
-* `EnableMod`
-* `PlasticCost`
-* `SwimSpeedMultiplier`
-* `SwimSpeed`
-* `SwimAcceleration`
-* `SwimAnimationSpeed`
-* `SwimAnimationLerp`
-* `BuoyancyForce`
-* `ActiveRiseForce`
-* `MaxRiseSpeed`
-* `MaxSinkSpeed`
-* `VisualScale`
-* `VisualHeightOffset`
-* `PlayerVisualScale`
-* `PlayerVisualHeightOffset`
-* `PlayerVisualForwardOffset`
-* `ForceRuntimeOrangeMaterial`
-* `DebugLogs`
-
----
-
-## Support
-
-If you really love my mods and want to back my work, you can support me over on [Ko-fi](https://ko-fi.com/joive)! ☕
+The mod uses embedded assets, so no separate asset files are required for normal installation.
