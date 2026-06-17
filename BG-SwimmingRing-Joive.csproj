@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>BG-SwimmingRing-Joive</AssemblyName>
+    <RootNamespace>Joive.BurglinGnomes.SwimmingRing</RootNamespace>
+    <Authors>Joive</Authors>
+    <Company>Joive</Company>
+    <Product>BG Swimming Ring</Product>
+    <Version>1.0.16</Version>
+    <AssemblyVersion>1.0.16.0</AssemblyVersion>
+    <FileVersion>1.0.16.0</FileVersion>
+    <Description>Adds a craftable swimming ring equipment item.</Description>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <OutputPath>build\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GameDir>C:\Program Files (x86)\Steam\steamapps\common\Burglin' Gnomes</GameDir>
+    <ManagedDir>$(GameDir)\Gnomium_Data\Managed</ManagedDir>
+    <BepInExCoreDir>$(GameDir)\BepInEx\core</BepInExCoreDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net472" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExCoreDir)\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExCoreDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(ManagedDir)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="com.lightbug.character-controller-pro">
+      <HintPath>$(ManagedDir)\com.lightbug.character-controller-pro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>$(ManagedDir)\Unity.Localization.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Netcode.Runtime">
+      <HintPath>$(ManagedDir)\Unity.Netcode.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>$(ManagedDir)\Sirenix.Serialization.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(ManagedDir)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>$(ManagedDir)\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>$(ManagedDir)\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(ManagedDir)\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="assets\swimmingring.bundle">
+      <LogicalName>Joive.BurglinGnomes.SwimmingRing.Assets.swimmingring.bundle</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\SwimmingRingIcon.png">
+      <LogicalName>Joive.BurglinGnomes.SwimmingRing.Assets.SwimmingRingIcon.png</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

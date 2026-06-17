@@ -1,0 +1,9 @@
+{
+  "name": "BG-SwimmingRing-Joive",
+  "version_number": "1.0.0",
+  "website_url": "",
+  "description": "Adds a craftable swimming ring equipment item.",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100"
+  ]
+}
